@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/index.css" />
-    <title>ISD SGCU</title>
-  </head>
-  <body>
-    <h1>ลงทะเบียน</h1>
-  </body>
-  <script src="script/index.js" type="text/javascript"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00">
+    <title>ลงทะเบียน</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="navbar">
+        <nav class="navbar">
+            <img src="image/logo.svg">
+        </nav>  
+    </section>
+    <div class="chula-kite">
+        <img src="image/chula kite.svg">
+    </div>
+    <div class="container">
+        <section id="register">
+            <form id="form" class="register-box">
+                <div class="head">
+                    <div class="header">ลงทะเบียน</div>
+                    <div class="sub-header">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="ชื่อ">
+                    <small>error message</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="surname" placeholder="นามสกุล">
+                    <small>error message</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="user" placeholder="ชื่อผู้ใช้">
+                    <small>error message</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="email" placeholder="อีเมล">
+                    <small>error message</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="password" placeholder="รหัสผ่าน">
+                    <small>error message</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="confirmpassword" placeholder="ยืนยันรหัสผ่าน">
+                    <small>error message</small>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="btn-submit form-group">
+                        <div type="text">Submit</div>
+                    </button>
+                    <small>error message</small>
+                </div>
+            </form>
+        </section>
+        <section id="social-media">
+            <div class="icon">
+                <a href="https://instagram.com/sgcu.chula?igshid=YmMyMTA2M2Y=" class="ig">
+                    <img src="image/icon-ig.svg">
+                </a>
+                <a href="https://m.facebook.com/sgcu.chula/" class="fb">
+                    <img src="image/icon-fb.svg">
+                </a>
+                <a href="https://twitter.com/sgcu_chula?s=11" class="tweet">
+                    <img src="image/icon-tweet.svg">
+                </a>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>

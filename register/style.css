@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background: url('image/Background.svg ') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+
+nav {
+    background-color: #FFFFFF;
+    height: 10vh;
+}
+
+nav img {
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.container {
+    margin-top: 5%;
+    margin-right: 10%;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.chula-kite {
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: 141px;
+    top: 202px;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.register-box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 60px 60px;
+    width: fit-content;
+
+    background: #FFFFFF;
+    
+    border: 1px solid #DE5C8E;
+    border-radius: 8px;
+}
+
+.register-box .head {
+    margin-bottom: 20px;
+}
+.form-group input{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 14px;
+    gap: 10px;
+
+    width: 260px;
+    height: 32px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #B4B4B4;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.register-box .header {
+    /* ลงทะเบียน */
+
+
+width: 215px;
+height: 73px;
+
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 73px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.register-box .sub-header {
+    /* กรุณากรอกข้อมูลให้ครบถ้วน */
+
+width: 168px;
+height: 21px;
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+
+/* Black */
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+flex-grow: 0;
+}
+
+.btn-submit {
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 80px;
+gap: 10px;
+width: 260px;
+height: 32px;
+
+/* Primary/500 */
+
+background: #DE5C8E;
+border-radius: 4px  ;
+border: #DE5C8E;
+
+/* Inside auto layout */
+
+flex: none;
+order: 6;
+flex-grow: 0;
+
+}
+
+.btn-submit div[type="text"] {
+    /* Submit */
+
+
+width: 53px;
+height: 24px;
+
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+/* White */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    width: inherit;
+    margin-top: 40%;
+}
+
+.form-group.error input{
+    border-color: red;
+}
+.form-group.success input{
+    border-color: green;
+}
+.form-group small{
+    color: red;
+    bottom: 0px;
+    visibility: hidden;
+}
+form button{
+    cursor: pointer;
+}
+.form-group.error small{
+    visibility: visible;
+}
+
+@media only screen and (max-width : 1150px) {
+    .chula-kite{
+        display: none;
+    }
+    nav img {
+        margin-left: 30px;
+    }
+    .container {
+        margin: 0;
+        align-items: center;
+    }   
+}
+
+@media only screen and (max-width : 700px) {
+    body {
+        background: url('image/background-mobile.svg') no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    } 
+    nav {
+        height: 15vh;
+    }
+    .container {
+        margin: 0;
+        align-items: center;
+        height: 85vh;
+    }   
+    .register-box {
+        padding: 30px 40px 50px;
+    }   
+    .icon {
+        display: none;
+    }
+    
+}
