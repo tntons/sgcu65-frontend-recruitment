@@ -1,4 +1,5 @@
-[Insert Your Name Here]
+Saharat Nuamchit
+สหรัถ นวมจิตร
 
 # SGCU65 Frontend Recruitment
 
