@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background: url('image/Background.svg ') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+
+nav {
+    background-color: #FFFFFF;
+    height: 10vh;
+}
+
+nav img {
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.container {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.container h2 {
+    /* รายชื่อผู้ลงทะเบียน */
+    margin-left: 40px;
+
+
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 73px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #000000;
+
+    
+}
+header{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header input {
+    /* textfield */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 14px;
+gap: 10px;
+
+width: 260px;
+height: 32px;
+
+/* White */
+
+background: #FFFFFF;
+/* Gray */
+
+border: 1px solid #B4B4B4;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+#userCard {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#userCard div {
+    /* UserCard */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: block ;
+box-sizing: border-box;
+flex-direction: column;
+align-items: flex-start;
+padding: 15px;
+gap: 5px;
+margin-left: 40px;
+width: 249px;
+height: 95px;
+margin-bottom: 40px;
+/* White */
+
+background: #FFFFFF;
+/* Primary/500 */
+
+border: 1px solid #DE5C8E;
+border-radius: 8px;
+
+}
+
+#userCard div h1 {
+    /* Username */
+
+
+width: 213px;
+height: 36px;
+
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+
+/* Primary/500 */
+
+color: #DE5C8E;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+#userCard div p {
+    /* ชื่อ นามสกุล */
+
+
+
+font-family: 'Prompt';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+
+/* Black */
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+@media only screen and (max-width : 700px) {
+    body {
+        background: url('image/background-mobile.svg') no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 80%;
+    } 
+    #userCard {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center ;
+    }
+    .container {    
+        align-items: center;
+        margin: 0;
+    }   
+    #userCard div {
+        margin-left: 0;
+    }
+    nav img {
+        margin-left: 30px;
+    }
+    .container header h2 {
+        font-size: 35px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+}
